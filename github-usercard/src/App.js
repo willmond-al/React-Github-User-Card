@@ -25,9 +25,9 @@ class App extends React.Component{
     })
   }
 
-handleChange = e =>{
+handleChange = evt =>{
   this.setState({
-    gitUser: e.target.value
+    gitUser: evt.target.value
   })
 }
 
