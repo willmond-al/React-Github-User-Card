@@ -7,7 +7,7 @@ class GitCard extends React.Component{
         return(
           
           <StyledCard>
-            <img src={this.props.gitUserInfo.avatar_url}/>
+            <img alt={this.props.gitUserInfo.name} src={this.props.gitUserInfo.avatar_url}/>
             <p><span>{this.props.gitUserInfo.name}</span> has <span>{this.props.gitUserInfo.followers}</span> followers on gitHub!</p>
           </StyledCard>
         
@@ -23,9 +23,11 @@ flex-wrap:nowrap;
 justify-content:center;
 width: 40%;
 margin: 2% auto 0;
+border-radius:20px;
 
 img{
     width:50%;
+    border-radius:20px;
 }
 
 p{
